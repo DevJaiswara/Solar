@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SolarSave Energy Solutions</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+header{
+background:#0a7d2c;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.hero{
+background:url("https://images.unsplash.com/photo-1509391366360-2e959784a276") center/cover;
+height:350px;
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:36px;
+background:rgba(0,0,0,0.5);
+padding:10px;
+}
+
+.container{
+padding:30px;
+max-width:900px;
+margin:auto;
+}
+
+.form-box{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+button{
+background:#f7b500;
+border:none;
+padding:15px;
+width:100%;
+font-size:18px;
+cursor:pointer;
+border-radius:6px;
+}
+
+button:hover{
+background:#e5a800;
+}
+
+.benefits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.benefit{
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.gallery{
+display:flex;
+overflow-x:auto;
+gap:20px;
+margin-top:30px;
+}
+
+.gallery img{
+height:200px;
+border-radius:10px;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>सोलरसेव एनर्जी सॉल्यूशंस</h2>
+<p>अपने घर को सूर्य की ऊर्जा से संचालित करें</p>
+</header>
+
+<section class="hero">
+
+<h1>Install Government Approved Rooftop Solar</h1>
+<p>Save up to 80% on electricity bills</p>
+
+</section>
+
+<div class="container">
+
+<h2>Get Free Solar Consultation</h2>
+
+<div class="form-box">
+
+<form onsubmit="sendToWhatsapp(); return false;">
+
+<input type="text" id="name" placeholder="Full Name" required>
+
+<input type="tel" id="phone" placeholder="Phone Number" required>
+
+<textarea id="address" placeholder="Address" required></textarea>
+
+<button type="submit">Request Solar Quote</button>
+
+</form>
+
+</div>
+
+<h2>Benefits of Solar</h2>
+
+<div class="benefits">
+
+<div class="benefit">☀️ Reduce electricity bills up to 80%</div>
+
+<div class="benefit">🏛 Government subsidy available</div>
+
+<div class="benefit">🌱 Clean renewable energy</div>
+
+<div class="benefit">💰 Increase property value</div>
+
+</div>
+
+<h2>Solar Installations</h2>
+
+<div class="gallery">
+
+<img src="https://images.pexels.com/photos/9875444/pexels-photo-9875444.jpeg">
+
+<img src="https://images.pexels.com/photos/8853505/pexels-photo-8853505.jpeg">
+
+<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231">
+
+<img src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a">
+
+</div>
+
+<h2>About Solar Energy</h2>
+
+<p>
+
+Solar rooftop systems convert sunlight into electricity using photovoltaic panels.
+With government subsidies in India, installing solar has become affordable.
+A solar system can run for more than 20 years and drastically reduce electricity bills.
+
+</p>
+
+<p>
+सोलर रूफटॉप सिस्टम फोटोवोल्टिक पैनलों का उपयोग करके सूर्य की रोशनी को बिजली में परिवर्तित करते हैं। 
+भारत में सरकारी सब्सिडी के कारण सोलर पैनल लगवाना किफायती हो गया है। एक सोलर सिस्टम 20 साल से 
+अधिक समय तक चल सकता है और बिजली के बिलों में भारी कमी ला सकता है।
+</p>
+
+</div>
+
+<footer>
+
+<p>Email: info@solarsave.com</p>
+
+<p>Phone / WhatsApp: +919682252433</p>
+
+<p>© 2026 SolarSave Energy Solutions</p>
+
+</footer>
+
+<script>
+
+function sendToWhatsapp(){
+
+var name=document.getElementById("name").value;
+var phone=document.getElementById("phone").value;
+var address=document.getElementById("address").value;
+
+var message="New Solar Lead:%0A"+
+"Name: "+name+"%0A"+
+"Phone: "+phone+"%0A"+
+"Address: "+address;
+
+var whatsapp="https://wa.me/919682252433?text="+message;
+
+window.open(whatsapp,'_blank');
+
+}
+
+</script>
+
+</body>
+</html>
